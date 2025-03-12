@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo On-Demand</title>
+    <title>Video On Demand</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,46 +11,51 @@
         <h1>VEDIO</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">On Demand</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">DEMAND</a></li>
+                <li><a href="#">BLOG</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <div class="container">
         <aside class="sidebar">
-            <h2>Vídeos</h2>
-            <ul id="video-list">
-                <li data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">Vídeo 1</li>
-                <li data-video="https://www.youtube.com/embed/3JZ_D3ELwOQ">Vídeo 2</li>
-                <li data-video="https://www.youtube.com/embed/tgbNymZ7vqY">Vídeo 3</li>
-            </ul>
+            <h2>VIDEOS</h2>
+            <div class="video-sidebar">
+                <img src="thumb1.jpg" alt="Thumb 1">
+                <img src="thumb2.jpg" alt="Thumb 2">
+                <img src="thumb3.jpg" alt="Thumb 3">
+                <img src="thumb4.jpg" alt="Thumb 4">
+            </div>
         </aside>
 
-        <section class="video-container">
-            <h2>Video On-Demand</h2>
-            <div class="video-player">
-                <iframe id="main-video" width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <main>
+            <section class="featured">
+                <h2>VIDEO ON DEMAND</h2>
+                <div class="video-player">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+            </section>
 
-            <div class="video-grid">
-                <div class="video-item" data-video="https://www.youtube.com/embed/3JZ_D3ELwOQ">
-                    <img src="https://via.placeholder.com/300x200" alt="Vídeo 2">
-                    <p>Vídeo 2</p>
+            <section class="video-grid">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    <p>Video-On-Demand</p>
                 </div>
-                <div class="video-item" data-video="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    <img src="https://via.placeholder.com/300x200" alt="Vídeo 3">
-                    <p>Vídeo 3</p>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    <p>Video-On-Demand</p>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    <p>Video-On-Demand</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2025 VEDIO - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Video On Demand</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
